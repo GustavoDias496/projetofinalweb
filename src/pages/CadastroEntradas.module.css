@@ -1,0 +1,12 @@
+.title{
+    padding-top: 7%;
+    color: #024059;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

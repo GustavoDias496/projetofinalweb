@@ -1,0 +1,26 @@
+ .footer{
+     background-color: #222;
+     display: flex;
+     justify-content: center;
+     height: 50px;
+ }
+
+ .footerList{
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    list-style: none;
+    align-items: center;
+ }
+
+ .footerList li{
+    letter-spacing: 5px;
+    margin-left: 32px;
+ }
+
+ .footerItem{
+    color: white;
+ }
+
+.link{
+    color: blue;
+}

@@ -1,0 +1,53 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #024059;
+    padding: 1em;
+    font-family: "Reem Kufi";
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.list{
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.item{
+    margin-right: 1em;
+    
+}
+
+.item a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.item a:hover{
+    color: #2e2;
+}
+
+.logo{
+    width: 100px;
+}
+
+.pageTitle{
+    color: #fff;
+    font-family: "Reem Kufi";
+    font-weight: 700;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 300px;
+
+}
