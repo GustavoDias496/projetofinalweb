@@ -82,7 +82,9 @@ function Historico(){
 
     return(
         <div className={styles.content}>
-            <NavBar/>
+            <div className={styles.header}>
+                <NavBar/> 
+            </div>
             <div className={styles.titleInput}>
                 <h1>Entradas</h1>
             </div>
