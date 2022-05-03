@@ -1,0 +1,142 @@
+.fullContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content{
+    padding-top: 2em;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardData1{
+    background-color: rgba(2, 89, 64, 0.2);
+    padding: 2em;
+    width: 25%;
+    border-radius: 20px;
+} 
+
+.cardOneTitle{
+    color: #025940;
+    font-family: Gill Sans, sans-serif;
+    font-size: 40px;
+}
+
+.cardData2{   
+    background-color: rgba(2, 89, 64, 0.2);
+    padding: 2em;
+    width: 25%;
+    border-radius: 10px;
+} 
+
+.cardTwoTitle{
+    color: #900505;
+    font-family: Gill Sans, sans-serif;
+    font-size: 40px;
+}
+
+.cardData3{
+    background-color: rgba(2, 89, 64, 0.2);
+    padding: 2em;
+    width: 25%;
+    padding-left: 20px;
+    border-radius: 10px;
+} 
+
+.cardThreeTitle{
+    color: #100c9c;
+    font-family: Gill Sans, sans-serif;
+    font-size: 40px;
+}
+
+.value{
+    padding-top: 20px; 
+    padding-left: 15px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.imgLogo{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+
+@media (max-width: 650px) {
+    .content{
+        padding-top: 2em;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .cardData1{
+        background-color: rgba(2, 89, 64, 0.2);
+        padding: 2em;
+        width: 50%;
+        border-radius: 20px;
+        
+    } 
+
+    .cardOneTitle{
+        color: #025940;
+        font-family: Gill Sans, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .cardData2{   
+        background-color: rgba(2, 89, 64, 0.2);
+        padding: 2em;
+        width: 50%;
+        border-radius: 10px;
+        padding-top: 1em;
+    } 
+
+    .cardTwoTitle{
+        color: #900505;
+        font-family: Gill Sans, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cardData3{
+        background-color: rgba(2, 89, 64, 0.2);
+        padding: 2em;
+        width: 50%;
+        padding-left: 20px;
+        border-radius: 10px;
+    }
+
+    .cardThreeTitle{
+        color: #100c9c;
+        font-family: Gill Sans, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .value{
+        padding-top: 20px; 
+        padding-left: 15px;
+        font-size: 25px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .imgLogo{
+        display: flex;
+        justify-content: center;
+        height: 400px;
+    }
+}

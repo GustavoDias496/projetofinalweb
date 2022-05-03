@@ -1,8 +1,19 @@
+.mobileMenu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobileMenu div{
+    width: 32px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 8px;
+}
 
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: #024059;
+    background: linear-gradient(#100c9c, #000000);
     padding: 1em;
     font-family: "Reem Kufi";
     font-weight: 400;
@@ -15,12 +26,12 @@
     list-style: none;
     align-items: center;
 }
-
+ 
 .list li{
     letter-spacing: 3px;
     margin-left: 32px;
 }
-
+ 
 .item{
     margin-right: 1em;
     
@@ -32,7 +43,8 @@
 }
 
 .item a:hover{
-    color: #2e2;
+    color: #00fa4b;
+    font-size: 28px;
 }
 
 .logo{
@@ -49,5 +61,40 @@
     justify-content: center;
     align-items: center;
     padding-right: 300px;
+}
 
+@media (max-width: 650px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(#100c9c, #000000);
+        padding: 1em;
+        font-family: "Reem Kufi";
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .item a:hover{
+        color: #00fa4b;
+        font-size: 23px;
+    }
+
+    .logo{
+        width: 100px;
+        display: none;
+    }
+
+    .pageTitle{
+        color: #fff;
+        font-family: "Reem Kufi";
+        font-weight: 700;
+        font-size: 32px;
+        font-weight: bold;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding-right: 300px;
+    }
 }

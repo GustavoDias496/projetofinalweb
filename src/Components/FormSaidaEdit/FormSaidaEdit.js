@@ -1,31 +1,34 @@
-import styles from './FormSaida.module.css'
+import styles from './FormSaidaEdit.module.css'
 import Input from '../Input/Input'
 import SubmitButton from '../SubmitButton/SubmitButton'
-import { useState} from 'react'
 import api from '../../services/api'
+import { useState } from 'react'
 
-function FormSaida(){
+function FormSaidaEdit(){
 
     const [data, setData] = useState({
+        _id: "",
         name: "",
         unitaryValue: "",
         quant: "",
         amount: "",
-        description: ""
+        description: "" 
     })
+
 
     function submit(e){
         e.preventDefault();
-        api.post('/saida',{
+        api.patch(`/saida/${data._id}`,{
             nome: data.name,
             valorUnitario: data.unitaryValue,
             quantidade: data.quant,
             descricao: data.description,
             valorTotal: data.amount
         })
-        .then(res =>{
-            console.log(data)
+        .then(res=>{
+            console.log(res.data)
             setData({
+                _id: "",
                 name: "",
                 unitaryValue: "",
                 quant: "",
@@ -43,7 +46,15 @@ function FormSaida(){
     }
 
     return(
-        <form onSubmit={(e)=>submit(e)} className={styles.form}>
+        <form onSubmit={(e)=> submit(e)} className={styles.form}>
+            <Input 
+                onChange={(e)=>handle(e)}
+                value={data._id}
+                type="text" 
+                text="ID do Produto"
+                name="_id"
+                placeholder="Digite o ID do produto"
+            />
             <Input 
                 onChange={(e)=>handle(e)}
                 value={data.name}
@@ -84,9 +95,10 @@ function FormSaida(){
                 name="description"
                 placeholder="Digite uma descrição sobre o produto"
             />
-            <SubmitButton text="Enviar"/>
+                <SubmitButton text="Enviar"/>
+                <br/><br/>
         </form>
     )
 }
 
-export default FormSaida;
+export default FormSaidaEdit;

@@ -2,6 +2,8 @@
     padding-top: 7%;
     color: #024059;
     text-align: center;
+    justify-content: space-between;
+    padding-bottom: 0%;
 }
 
 .content{
@@ -9,4 +11,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} 

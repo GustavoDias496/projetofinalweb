@@ -5,21 +5,23 @@ import CadastroSaidas from "./pages/CadastroSaidas";
 import CadastroEntradas from "./pages/CadastroEntradas";
 import Historico from "./pages/Historico";
 
-import NavBar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
+import EditEntrada from "./pages/EditEntrada";
+import EditSaida from "./pages/EditSaida";
+import Login from "./pages/Login";
 
 
 function App() {
   return (
     <Router>
-        <NavBar/>
         <Routes>
-          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/" element={<Login/>}/>
           <Route path="/Historico" element={<Historico/>}/>
           <Route path="/CadastroSaidas" element={<CadastroSaidas/>}/>
           <Route path="/CadastroEntradas" element={<CadastroEntradas/>}/>
+          <Route path="/EditEntrada/:id" element={<EditEntrada/>}/>
+          <Route path="/EditSaida/:id" element={<EditSaida/>}/>
+          <Route path="/Home" element={<Home/>}/>
         </Routes>
-        <Footer/>
     </Router>
   );
 }

@@ -1,19 +1,21 @@
 .btn{
-    background-color: #222;
+    background-color: #100c9c;
     color: #fff;
     padding: 0.7em 1.2em;
     text-decoration: none;
     transition: .5s;
     cursor: pointer;
     border: none;
-
+    border-radius: 7px;
 }
 
-.btn :hover{
-    background-color: #fff;
+.content button:hover{
+    background-color: #29c742;
     color: #222;
+    font-size: 15px;
 }
-
+ 
 .content{
     padding-top: 5%;
-}
+    text-align: center;
+}  
