@@ -86,6 +86,7 @@ function FormEntrada(){
                 placeholder="Digite uma descrição sobre o produto"
             />
                 <SubmitButton text="Enviar"/>
+                <br/><br/>
         </form>
     )
 }

@@ -75,7 +75,7 @@ function FormSaida(){
                 text="Valor Total"
                 name="amount"
                 placeholder="Digite o valor total"
-            />
+            /> 
             <Input 
                 onChange={(e)=>handle(e)}
                 value={data.description}
@@ -85,6 +85,7 @@ function FormSaida(){
                 placeholder="Digite uma descrição sobre o produto"
             />
             <SubmitButton text="Enviar"/>
+            <br/><br/>
         </form>
     )
 }
