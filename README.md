@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Projeto QG Finanças
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este web site é projeto para controle de vendas de queijo na Fazenda Peão.
+Com ele é possivel gerenciar todas as entradas e saidas financeiras em relação
+a venda de queijos.
 
-## Available Scripts
+## Como iniciar o projeto 
 
-In the project directory, you can run:
+Para iniciar o projeto basta baixa-lo e rodar o comando "npm start". 
 
-### `npm start`
+### Tecnologias usandas nele
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O site foi desenvolvido usando o React Js, as informações que ele usa
+são providas por uma API que permite fazer todo o CRUD das informações
+no nosso front end.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Link da API -> https://backendprojetoweb.herokuapp.com/
 
-### `npm test`
+### Como utilizar a aplicação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+É possivel ter acesso à aplicação através do link a seguir,
+ao entrar no site você irá se deparar com a tela de login no
+momento é possivel utilizar qualquer informação para acessar o
+site, futuramente será implementado um sistema de cadastro de 
+usuário e autenticação deles. 
+  Após logar no site você irá se deparar com a tela Home onde
+será apresentado um resumo das finanças, esse resumo será 
+exbido em forma de cards. No menu da página vai constar quatro
+opções que são elas: Home, Hitórico, Cadastro de Entradas e 
+Cadastro de Saídas. A tela Home será o resumo já citado, na tela
+de Histórico será possivel vizualizar todas as informações já 
+cadastradas na plataforma de maneira mais detalhada. Também 
+será possivel excluir ou editar uma dessas informações. Nas telas
+de cadastro o usuário conseguirá cadastrar entradas e saídas.
 
-### `npm run build`
+Link do site -> https://projetofinalweb-gustavodias496.vercel.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Estrutura de pastas do projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Todo o código está armazenado na pasta "src", dentro dela temos a pasta
+"Componets" e nela tem todos os componentes usados pela aplicação, na 
+pasta "pages" tem todos os arquivos das páginas do site com seus estilos,
+"service" tem o arquivo com a URL base da nossa API e na pasta "img" tem
+as imagens usadas na aplicação.
 
-### `npm run eject`
+### Responsividade
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O site está responsivo para resolução de 650 de largura que é o tamanho
+do aparelho disponivel para uso dos donos da fazenda.
