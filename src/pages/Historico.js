@@ -114,6 +114,9 @@ function Historico(){
                     </tr>
                     {arrSaidas}
                 </table>
+                <br/>
+                <br/>
+                <br/>
             <Footer/>
         </div>
     )
