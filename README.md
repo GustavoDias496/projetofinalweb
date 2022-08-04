@@ -33,7 +33,7 @@ cadastradas na plataforma de maneira mais detalhada. Também
 será possivel excluir ou editar uma dessas informações. Nas telas
 de cadastro o usuário conseguirá cadastrar entradas e saídas.
 
-Link do site -> https://projetofinalweb-gustavodias496.vercel.app/
+Link do site -> https://projetofinalweb-gustavodias496.vercel.app/Home
 
 
 ### Estrutura de pastas do projeto
@@ -43,8 +43,3 @@ Todo o código está armazenado na pasta "src", dentro dela temos a pasta
 pasta "pages" tem todos os arquivos das páginas do site com seus estilos,
 "service" tem o arquivo com a URL base da nossa API e na pasta "img" tem
 as imagens usadas na aplicação.
-
-### Responsividade
-
-O site está responsivo para resolução de 650 de largura que é o tamanho
-do aparelho disponivel para uso dos donos da fazenda.
